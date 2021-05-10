@@ -1,0 +1,98 @@
+.full-movie-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    overflow: auto;
+    overflow-x: hidden;
+    z-index: 9999;
+}
+
+.full-movie-container.show {
+    display: block;
+}
+
+.full-movie {
+    position: relative;
+    max-width: 500px;
+    margin: 5em auto;
+    background: #fff;
+    border: 2px solid #000;
+}
+
+.full-movie-poster {
+    text-align: center;
+}
+
+.full-movie-poster img {
+    width: 100%;
+}
+
+.full-movie-info {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.full-movie-info .movie-title {
+    font-size: 2rem;
+}
+
+.full-movie-detail {
+    padding: 2em;
+    width: 100%;
+}
+
+.full-movie h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 1em 0;
+    padding: 0.5em 0;
+    border-bottom: 2px solid #000;
+}
+
+.full-movie p {
+    font-size: 1.125rem;
+}
+
+.nomination-btn.close-nomination-btn {
+    background: var(--secondaryColor);
+    border: 2px solid var(--secondaryColor);
+}
+
+.nomination-btn.close-nomination-btn:hover {
+    color: var(--secondaryColor);
+    background: transparent;
+}
+
+.btn-icon-close {
+    mask: url(../assets/icons/close.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/close.svg) no-repeat center;
+}
+
+.close-nomination-btn:hover .btn-icon-close {
+    background-color: var(--secondaryColor);
+}
+
+.rating-star {
+    width: 25px;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+@media (max-width: 560px) {
+    .full-movie {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 460px) {
+    .full-movie {
+        max-width: 300px;
+    }
+}
