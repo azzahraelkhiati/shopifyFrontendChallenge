@@ -1,3 +1,17 @@
+Model of the website was created with azure.
+
+UX design : 
+-Icons next to every command to reinforce the message with a visual explanation.
+-Color red to grab attention and encourage action.
+-Confirmation dialogs to prevent errors and encourage experimentations.
+-Banner to confirm actions to the user.
+-Call to action button in blue and red.
+-Navbar always at the top. 
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
